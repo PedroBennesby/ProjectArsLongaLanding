@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Antonio:wght@100&family=Josefin+Slab:wght@100;200;300;400&family=Roboto:wght@100;300;400&display=swap");
+html {
+  background-color: #202124;
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+}
+
+h1 {
+  font-family: "Josefin Slab", serif;
+  font-weight: 100;
+  font-size: 4em;
+  text-align: center;
+}
+
+.titulo {
+  margin-bottom: 2rem;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container-timer {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.day,
+.hour,
+.minute,
+.second {
+  border-radius: 5px;
+  background: #202124;
+  -webkit-box-shadow: 6px 6px 11px #181818, -6px -6px 11px #202020;
+          box-shadow: 6px 6px 11px #181818, -6px -6px 11px #202020;
+  width: 6.25rem;
+  height: 6.25rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.day > #day,
+.hour > #hour,
+.minute > #minute,
+.second > #second {
+  margin-top: 10px;
+}
+
+footer {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+}
+
+footer > p > a {
+  text-decoration: none;
+}
+
+footer > p > a:visited,
+a:link {
+  color: #5c5c5c;
+}
+
+@media (max-width: 600px) {
+  .container-timer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 100%;
+  }
+  .titulo {
+    margin-bottom: 0;
+  }
+  .hour,
+  .minute,
+  .second {
+    margin: 1.25rem 0;
+  }
+  .day {
+    margin-bottom: 1.25rem;
+  }
+  footer {
+    position: relative;
+    text-align: center;
+    margin-top: 3.125rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */

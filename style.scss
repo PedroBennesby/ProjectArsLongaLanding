@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Antonio:wght@100&family=Josefin+Slab:wght@100;200;300;400&family=Roboto:wght@100;300;400&display=swap");
+
+$font-main-color: #fff;
+$font-sub-color: #5c5c5c;
+$background-color: #202124;
+
+html {
+  background-color: $background-color;
+  font-family: "Roboto", sans-serif;
+  color: $font-main-color;
+}
+
+h1 {
+  font-family: "Josefin Slab", serif;
+  font-weight: 100;
+  font-size: 4em;
+  text-align: center;
+}
+
+.titulo {
+  margin-bottom: 2rem;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container-timer {
+  width: 50%;
+  // height: 100px;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  align-content: center;
+}
+
+.day,
+.hour,
+.minute,
+.second {
+  border-radius: 5px;
+  background: $background-color;
+  box-shadow: 6px 6px 11px #181818, -6px -6px 11px #202020;
+  width: 6.25rem;
+  // height: 6.25rem;
+  height: 6.25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.day > #day,
+.hour > #hour,
+.minute > #minute,
+.second > #second {
+  margin-top: 10px;
+}
+
+footer {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+footer > p > a {
+  text-decoration: none;
+}
+
+footer > p > a:visited,
+a:link {
+  color: $font-sub-color;
+}
+
+@media (max-width: 600px) {
+  .container-timer {
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+  }
+
+  .titulo {
+    margin-bottom: 0;
+  }
+
+  .hour,
+  .minute,
+  .second {
+    margin: 1.25rem 0;
+  }
+
+  .day {
+    margin-bottom: 1.25rem;
+  }
+
+  footer {
+    position: relative;
+    text-align: center;
+    margin-top: 3.125rem;
+  }
+}
